@@ -1,0 +1,48 @@
+body {
+    width: 100vw;
+    height: 100vh;
+
+
+    >header {
+        height: calc((55*100) / 667) + vh;
+
+        @include breakpoint($bp-md) {
+            height: calc((91*100) / 1024) + vh;
+        }
+        @include breakpoint($bp-lg) {
+            height: calc((92*100) / 800) + vh;
+        }
+    }
+
+    >main {
+        width: 100%;
+        height: calc((486*100) / 667) + vh;
+
+        @include breakpoint($bp-md) {
+            height: calc((721*100) / 1024) + vh;
+        }
+
+        @include breakpoint($bp-lg) {
+            height: calc((708*100) / 800) + vh;
+            display: flex;
+            flex-direction: row-reverse;
+        }
+    }
+
+    >footer {
+        position: relative;
+        z-index: 1000;
+        height: calc((126*100) / 667) + vh;
+
+        @include breakpoint($bp-md) {
+            height: calc((212*100) / 1024) + vh;
+        }
+
+        @include breakpoint($bp-lg) {
+            width: calc((545*100) / 1280) + vw;
+            height: calc((211*100) / 800) + vh;
+            position: absolute;
+            bottom: 0px;
+        }
+    }
+}

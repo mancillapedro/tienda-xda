@@ -1,0 +1,60 @@
+nav {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &,
+    >* {
+        height: 100%;
+    }
+
+    * {
+        text-decoration: none;
+    }
+
+    >button {
+        padding-right: 10%;
+
+        @include breakpoint($bp-md) {
+            display: none;
+        }
+    }
+
+    @include breakpoint($bp-md) {
+        &:hover .brand a {
+            transform: rotate(0deg);
+        }
+    }
+
+    ul {
+        display: none;
+        padding-right: 8.5%;
+
+        a:hover {
+            position: relative;
+            text-shadow: 0px 0px 32px $smoky-black;
+            top: 2px;
+        }
+
+        a:focus {
+            color: $granite-gray
+        }
+
+        li {
+            display: inline;
+            padding: 0 1.5rem;
+        }
+
+        @include breakpoint($bp-md) {
+            display: flex;
+            align-items: center;
+
+        }
+
+        @include breakpoint($bp-lg) {
+            padding-right: 2.25rem;
+
+        }
+    }
+}

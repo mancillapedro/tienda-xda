@@ -1,0 +1,42 @@
+.cta {
+    position: relative;
+    margin: 0 auto;
+    width: 80%;
+    height: calc((266 * 100) / 667) + vh;
+    padding: calc((30 * 100) / 667) + vh 0;
+
+    &__footer {
+        width: 100%;
+        position: absolute;
+        padding-top: .25rem;
+        padding-bottom: calc((32*100) / 667) + vh;
+        bottom: 0;
+    }
+
+    @include breakpoint($bp-md) {
+        height: calc((386*100) / 1024) + vh;
+        padding: calc((16 * 100) / 1024) + vh 0;
+
+        p {
+            padding: .625rem 0;
+            width: 75%;
+        }
+
+        &__footer {
+            width: 100%;
+            padding-top: 1rem;
+            padding-bottom: calc((64*100) / 1024) + vh;
+        }
+    }
+
+    @include breakpoint($bp-lg) {
+        height: calc((497*100) / 800) + vh;
+        margin: 0;
+        width: calc((545*100) / 1280) + vw;
+        padding: 3.5rem 4.5rem;
+
+        &__footer {
+            padding-bottom: calc((64*100) / 800) + vh;
+        }
+    }
+}

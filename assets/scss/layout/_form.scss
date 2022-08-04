@@ -1,0 +1,38 @@
+form {
+    height: 100%;
+    display: flex;
+    &:hover{
+        button[type="submit"] span{
+            animation: balancear-submit 2s;
+        }
+    }
+
+    fieldset {
+        height: 100%;
+        width: 100%;
+        padding: .75rem 10%;
+        padding-bottom: 1rem;
+        flex-direction: column;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+
+        input {
+            padding: .5rem;
+        }
+
+        @include breakpoint($bp-md) {
+            justify-content: flex-start;
+            padding: 1.875rem 15% 0 10%;
+
+            label {
+                padding-top: .75rem;
+                padding-bottom: .5rem;
+            }
+        }
+
+        @include breakpoint($bp-lg) {
+            padding: 1.875rem 4.5rem;
+        }
+    }
+}

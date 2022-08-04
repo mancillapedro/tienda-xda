@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Old+Standard+TT:wght@400;700&family=Raleway:wght@400;700&display=swap');
+
+// font-family: 'Old Standard TT', serif;
+// font-family: 'Raleway', sans-serif;
+
+$old-standard: 'Old Standard TT', serif;
+$raleway: 'Raleway', sans-serif;
+
+$white: #FFF;
+$isabelline: #ECECEC;
+$light-gray: #D1D1D1;
+
+$smoky-black: #0C0910;
+$granite-gray: #646266;
+$quick-silver: #A6A5A8;
+
+$xxx-large: pxToRem(50px);
+$xx-large: pxToRem(30px);
+$x-large: pxToRem(20px);
+$large: pxToRem(18px);
+$medium: pxToRem(16px);
+$small: pxToRem(14px);
+$x-small: pxToRem(12px);
+
+$regular: 400;
+$bold: 700;
+
+$bp-md: 768px;
+$bp-lg: 992px;
+
+// $nav-height: 20vh;
+// $main-height: calc( 100vh - $nav-height);

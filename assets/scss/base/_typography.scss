@@ -1,0 +1,72 @@
+h1,
+h3,
+label,
+.brand__logo,
+.btn-submit {
+    font-family: $old-standard;
+}
+
+p,
+button,
+a,
+::placeholder {
+    font-family: $raleway;
+}
+
+h1 {
+    font-size: $xx-large;
+    line-height: 2.5rem;
+
+    @include breakpoint($bp-md) {
+        font-size: $xxx-large;
+        line-height: 3.875rem;
+    }
+}
+
+h3 {
+    font-size: $x-large;
+
+    @include breakpoint($bp-md) {
+        font-size: $xx-large;
+    }
+}
+
+.brand__logo {
+    font-size: $large;
+    font-weight: $bold;
+
+    @include breakpoint($bp-md) {
+        font-size: $x-large;
+    }
+}
+
+a,
+.btn-submit {
+    font-size: $medium;
+    font-weight: $bold;
+}
+
+.btn-submit {
+    @include breakpoint($bp-md) {
+        font-size: $x-large;
+    }
+}
+
+p,
+button,
+label {
+    font-size: $small;
+
+    @include breakpoint($bp-md) {
+        font-size: $medium;
+    }
+}
+
+::placeholder {
+    font-size: $x-small;
+}
+
+p,
+.btn-cta {
+    line-height: 1.625rem;
+}
